@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial;
+    background:#fff9f0;
+}
+.nav-wrap {
+    width:100%;
+    position:fixed;
+    background: inherit;
+    z-index: 10;
+}
+nav{
+    background: #5bb1d3;
+    width: 95%;
+    margin: 10px auto 0;
+    border: solid 2px;
+    border-radius: 30px;
+}
+nav ul{
+    list-style:none;
+    gap: 10px 20px;
+}
+.nav-item a{
+    padding:10px;
+    display: block;
+}
+.nav-item a:hover, .nav-item a.active{
+    background: #7ed2f3;
+}
+nav a.btn{
+    background:#fff9f0;
+    border-radius:20px;
+    padding: 10px 20px;
+}
+nav a{
+    text-decoration:none;
+    color: black;
+}
+
+.d-flex{
+    display:flex;
+}
+.d-flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+.d-flex-center{
+    display:flex;
+    justify-content: center;
+}
+.flex-col{
+    flex-direction:column;
+}
+.flex-col-cnt{
+    flex-direction:column;
+    justify-content: center;
+}
+nav ul, .flex-wrap{
+    flex-wrap:wrap;
+}
+.list-none{
+    list-style:none;
+}
+.pad-sm{
+    padding:10px
+}
+.pad-sm2{
+    padding:10px
+}
+
+.h-window{
+    min-height: 100vh;
+}
+
+.porto-home{
+    margin: auto;
+    width: 80%;
+    padding: 40px 0 0;
+}
+.porto-home h2.disgraf{
+    font-size: 30pt;
+    text-align:center;
+    font-weight: 900;
+    margin: 0;
+}
+.porto-home h1{
+    font-size: 250pt;
+    overflow-wrap: anywhere;
+    font-weight: 900;
+    line-height: calc(8 / 10);
+    text-align: center;
+    color: #ef2b2a;
+    text-shadow: -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+.porto-home h2{
+    margin-top:20px;
+    font-size: 16pt;
+}
+#services, #about, #project, #works, #contact{
+    padding-top: 80px;
+}
+.porto-about, .porto-project, .porto-works{
+    width: 95%;
+    margin: auto;
+}
+.porto-about{border: solid #ef2b2a;min-height: 88vh;}
+.porto-about .title-head{
+    background: #ef2b2a;
+    color:#fff9f0;
+    font-size: 36pt;
+    text-align: center;
+}
+.porto-about .wraper{min-height: 77vh;}
+.porto-about .info{
+    width: 65%;
+    margin:auto;
+    gap: 10px 70px;
+}
+.porto-about .info h1{font-size: 100px;font-weight: 900;color: #ef2b2a;line-height: 1.25;}
+.porto-about .info p{
+    font-size: 14pt;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.experience-wrap{
+    gap:20px;
+}
+.experience-wrap b{
+    font-weight:900;
+}
+.experience-wrap span{
+    font-weight:bold;
+}
+.porto-about .info .experience-wrap h2{margin-bottom: 15px;border-bottom: solid 1px;padding-bottom: 5px;width: 250px;}
+.porto-about .info .design-tool-wrap li{
+    text-align:center;
+}
+.porto-about .info .design-tool-wrap img{
+    width:50px;
+    border-radius: 25px;
+}
+.porto-about .info img{
+    width: 300px;
+}
+.porto-project .head, .porto-works .head{
+    width: 100%;
+    display: flex;
+    border-bottom: solid;
+    margin-bottom: 40px;    
+}
+#services{
+    height: 80%;
+    padding-bottom: 80px;
+}
+.porto-services .head{
+    background:black;
+    color:#5bb1d3;
+    width:max-content;
+    border-radius: 50px;
+    margin: 0 auto 30px;
+}
+.porto-services .services-container{
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.porto-services .services-container .services-item{
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.porto-services .services-container .services-item img{width: 200px;margin-bottom: 20px;}
+.porto-project .head{
+    justify-content: flex-end;
+    border-radius: 0 45px 45px 0;
+    border-right: solid;
+    border-color: #ffa24e;
+    
+}
+.porto-works .head{ 
+    border-left: solid;
+    border-color: #ef2b2a;
+    border-radius: 40px 0 0 40px;
+    color:#fff9f0;
+}
+.porto-services .head h1, .porto-project .head h1, .porto-works .head h1{
+    font-size: 36pt;
+    padding: 10px 35px;
+    text-align: center;
+}
+.porto-project .head h1{
+    background: #ffa24e;
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+.porto-works .head h1{
+    background: #ef2b2a;
+    width: 300px;
+    border-radius: 40px 0 0 40px;
+}
+.porto-project .year-art .year{
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    color: #ef2b2a;
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: -40px;
+    line-height: 1;
+}
+.porto-project .year-art .year span, .porto-works .type-art .type span{
+    position: sticky;
+    top: 20%;
+}
+.porto-project .year-art, .porto-works .type-art{
+    padding: 30px 0;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    gap: 20px;
+}
+.porto-project .year-art .art, .porto-works .type-art .art{
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.porto-project .year-art .img-wrap{
+    width: 30%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.porto-project .year-art .img-frame, .porto-works .type-art .img-frame{
+    background: #f4ece0;
+    border: solid 1px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.porto-project .year-art .img-content{
+   width: 100%;
+   height: 100%;
+}
+.porto-project .year-art .img-frame:hover, .porto-works .type-art .img-frame:hover{
+    position:relative;
+    background:#d8cfc2;
+    box-shadow: 1px 1px 7px 1px #888888;
+}
+.porto-project .year-art .img-frame:hover{
+    width:110%;
+    right:10px;
+    bottom:10px;
+    
+}
+.porto-works .type-art .type{
+   
+}
+.porto-works .type-art .type span{
+    display: block;
+    font-size: 70px;
+    font-weight:900;
+    writing-mode: vertical-rl;
+    margin: auto;
+}
+.porto-works .type-art .art{flex-wrap: wrap;justify-content: center;}
+.porto-works .type-art .img-frame{
+    width:300px;
+    height:450px;
+}
+.porto-works .type-art #sticker .img-frame{width: 80%;}
+
+.porto-works .type-art .img-frame img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.porto-works .type-art #promotion .img-frame img{
+    object-fit: contain;
+}
+.img-viewer{
+    display:none;
+}
+.img-viewer.active{
+    display:block;
+    width:100%;
+    height: 100%;
+    background: #000000d9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+}
+.img-viewer .view-content.active{
+    height: 100%;
+}
+.close-btn, .zoom-btn{position: absolute;z-index: 20;right: 0;}
+.close-btn i{
+    margin: 10px;
+    font-size: 16pt;
+    color: #fff9f0;
+    text-shadow: 0px 0px 9px #d667b9;
+}
+.zoom-btn{
+    bottom:10px;
+    padding: 10px;
+    background: #fff9f0;
+    margin: 10px;
+    box-shadow: 0px 0px 9px #d667b9;
+}
+.zoom-btn:hover{
+    background: #b7b0a5;
+}
+.zoom-btn i{
+    font-size: 16pt;
+}
+.img-viewer.active .img-display{
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.img-viewer.active .img-display img{
+    height: 100%;
+    width: auto;
+    margin: auto;
+    object-fit: contain;
+}
+.img-viewer.active .img-display img.zoomed{
+    position: relative;
+    width: 100%;
+    height: unset;
+    cursor: grab;
+}
+footer{
+    padding: initial;
+    background:#ddd4c6;
+}
+
+#contact{
+    width:80%;
+    margin:auto;
+    padding-bottom: 80px;
+}
+footer .head{gap: 30px 20px;}
+footer .head .info, footer .head .hire{
+    width: 250px;
+}
+footer .head .info span{
+    display: block;
+}
+footer .head h2, footer .head .info span, footer .head h3{
+    margin-bottom:15px;
+}
+footer ul{
+    list-style:none;
+    line-height: 2;
+}
+footer .info li div{
+    gap:10px;
+}
+footer li i{
+    font-size:20pt !important;
+}
+footer a{
+    text-decoration:none;
+    color:#363636;
+}
+footer a:hover{
+    text-decoration:underline;
+    color: initial;
+}
+footer .download-btn{
+    padding: 10px;
+    width: 200px;
+    background: #ffa24e;
+    border-radius: 20px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+footer .download-btn:hover{
+    filter:contrast(1.5)
+}
+
+footer .see-porto{
+    border: solid 1px gray;
+    padding:10px;
+}
+footer .img-wrap{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .img-wrap img{
+    width: 100%;
+}
+footer .title-info a{
+    font-weight:bold;
+    margin-bottom:15px;
+    display:block;
+    font-size: 14pt;
+}
+footer .title-info p{
+    font-size:11pt;
+}
+footer .foot{
+    padding:30px;
+    background: #5bb1d3;
+    text-align:center;
+}
+@media(max-width:1000px){
+  .porto-about .info{
+    width: 90%;
+    }  
+}
+@media(max-width:940px){
+    nav ul{
+        width:100%;
+    }
+}
+@media(max-width:710px){
+    .porto-home h2, .porto-about .info h1{
+        text-align:center;
+    }
+    .porto-about .info{
+    justify-content:center;
+    flex-wrap:wrap-reverse;
+    } 
+    .porto-project .year-art .img-frame{
+        border-radius:10px
+    }
+    
+}
+@media(max-width:800px){
+    .porto-about .info{
+    width:auto;
+    } 
+}
+@media(max-width:380px){
+    .porto-home{
+        width:90%;
+    }
+    
+}
+@media(max-width:486px){
+    .porto-home h2.disgraf{
+        font-size: 24pt;
+    }
+    
+}
