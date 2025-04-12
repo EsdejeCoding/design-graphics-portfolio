@@ -326,7 +326,7 @@ nav ul, .flex-wrap{
 }
 .img-viewer.active .img-display img{
     height: 100%;
-    width: auto;
+    width: inherit;
     margin: auto;
     object-fit: contain;
 }

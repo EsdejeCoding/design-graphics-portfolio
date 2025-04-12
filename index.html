@@ -242,7 +242,7 @@
 
     imgView.classList.add('active')
     viewContent.classList.add('active')
-    viewContent.querySelector('.img-display').innerHTML = `<img src="${dirc}">`
+    viewContent.querySelector('.img-display').innerHTML = `<img src="${dirc}" class="displayed">`
   }
 
   events.forEach((val)=>{
@@ -265,6 +265,9 @@ window.addEventListener(val,(e)=>{
     .porto-project .year-art .year{
     font-size:${curTrg.innerWidth/7.5}px;
     letter-spacing: -${(curTrg.innerWidth/7.5)/2}px;
+    }
+    .porto-project .year-art .year span, .porto-works .type-art .type span{
+    top:30% !important;
     }
     
     }
@@ -439,6 +442,7 @@ document.addEventListener("DOMContentLoaded", loadImages);
     $('.close-btn').click((e) => {
       plusMinus = 0
       const img = $('.img-viewer.active .img-display img')
+      img.removeClass("displayed")
       img.removeClass("zoomed")
       img.removeAttr('style')
       
@@ -463,10 +467,14 @@ document.addEventListener("DOMContentLoaded", loadImages);
 
         const img = $('.img-viewer.active .img-display img')
         if(plusMinus === 0) {
+          img.addClass('displayed')
           img.removeClass("zoomed");
           img.removeAttr('style')
         }
-        if(plusMinus === 1) img.addClass("zoomed");
+        if(plusMinus === 1) {
+          img.remove('displayed')
+          img.addClass("zoomed");
+        }
     });
 
     // Event untuk Drag
